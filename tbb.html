@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Case Study | Cedy | UI Designer</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link type="text/css" rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+
+
+</head>
+
+<body>
+
+  <div class="wrapper" id="top-page">
+
+    <header>
+
+  <h5 class="logo">
+        <a href="index.html">
+          <span class="logo-name">Cedy</span>
+          <span class="logo-line"></span>
+          <span class="logo-text">The Designer</span>
+        </a>
+      </h5>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+       <a href="index.html#projects-wrap">Work</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+          <li>
+            <a href="mailto:cedyzhou@yahoo.com">
+              Contact
+            </a>
+            <span class="nav-hover-bg"></span>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+    <div class="case-wrap">
+      <section class="case-intro">
+        <h1 class="case-title">TianBaoBao</h1>
+
+        <section class="case-data">
+          <h4>
+TianBaoBao is used to reserve the tourism parks managed by the group for parent-child interactive activities and to sell group brand green crops online. Members can book activities and purchase products through their membership cards to accumulate points. 
+
+
+
+          <h4>
+
+          <ul class="case-summary">
+            <li>
+              <span>Role: </span> UX & UI Design/Research<</li>
+            <li>
+              <span>Context: </span>Internal Project</li>
+            <li>
+              <span>Date: </span>October 2014</li>
+          </ul>
+        </section>
+      </section>
+    </div>
+
+  </div>
+
+
+   <section class="img-wrap foo">
+      <img class="case-img" src="img/tbb/tbb.png ">
+    </section>
+  <div class="wrapper case-section case-spacing">
+    <h2 class="case-cnt-left foo">Our Approach
+</h2>
+
+    <a href="#top-page" id="top-btn"></a>
+
+    <section class="case-cnt-right foo">
+      <p>
+When beginning the design of the APP, our team constructed an outline of the necessary UX practices which we felt were the most necessary for a successful design. The practices that were defined in this meeting included:
+
+<ul class="list-point">
+        <li>Content Inventory</li>
+        <li>Review of Site Analytics</li>
+        <li>Card Sorting Priortization with the Line of Business</li>
+        <li>Competitive Analysis</li>
+        <li>Site Mapping</li>
+        <li>Wireframing</li>
+      </ul>
+</p>
+
+    <p>
+
+To begin the redesign process, and ensure that our team was focusing on the correct sections, we had to develop a deep understanding for the current status to understand the pain points and sections that required the most work.
+    </p>
+
+
+  </div>
+
+ 
+
+    <section class="img-wrap img-margin foo">
+      <img class="case-img" src="img/tbb/tbb-Home.png ">
+    </section>
+
+    
+
+
+   
+
+  <div class="wrapper case-section case-spacing foo">
+    <h2 class="case-cnt-left ">Final Takeaways</h2>
+
+    <section class="case-cnt-right ">
+
+      <p>The app design was my first professional experience within a UI/UX design team. I was exposed to a variety of new UX practices, and was able to gain detailed insight as to how operates within the digital field. </p>
+    </section>
+
+  </div>
+
+
+
+   <footer>
+    <div class="wrapper">
+      <section class="footer-cnt">
+        <h5 class="logo">
+          <a href="index.html">
+            <span class="logo-name">Cedy</span>
+            <span class="logo-line"></span>
+            <span class="logo-text">The Designer</span>
+          </a>
+        </h5>
+
+        <ul>
+          <li><!-- 
+          <i class="info-icon email-icon"></i>
+     -->        <a href="mailto:cedyzhou@yahoo.com"  class="">
+           
+            cedyzhou@yahoo.com</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+             <li>
+             <!--  <i class="info-icon phone"></i> -->
+            <a href="tel:8613556152190"  class="">   
+          8613556152190</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+          <li>
+<!--          <i class="info-icon dw"></i> -->
+            <a target="_blank" href="img/CedyZhou-UI Designer.pdf"  class="">
+          Resume</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Smooth Scroll -->
+  <script src="JS/smooth-scroll.js "></script>
+
+  <!--Scroll Reveal-->
+  <script src="JS/scrollreveal.js "></script>
+
+
+  <!-- Smooth Scroll Script -->
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+      // Speed & Easing
+      speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+      offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeOutQuad', // Easing pattern to use
+      customEasing: function(time) {
+
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+
+        // return <your formulate with time as a multiplier>
+
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+      },
+
+      // Callback API
+      before: function(anchor, toggle) {}, // Callback to run before scroll
+      after: function(anchor, toggle) {} // Callback to run after scroll
+    });
+
+  </script>
+
+
+  <!--- Scroll Reveal Script -->
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.foo');
+    sr.reveal('.bar');
+
+    sr.reveal('.foo', {
+      duration: 1500
+    })
+
+    sr.reveal('.foo', {
+      scale: 1
+    });
+
+    sr.reveal('.foo', {
+      distance: '40px'
+    });
+
+    sr.reveal('.foo', {
+      easing: 'ease-out'
+    });;
+
+  </script>
+
+
+  <!-- Scroll To Top Button Script-->
+  <script>
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250) {
+        document.getElementById("top-btn").style.display = "block";
+      } else {
+        document.getElementById("top-btn").style.display = "none";
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>

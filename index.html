@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Home | Cedy | UI Designer | Guangzhou</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link type="text/css" rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,700" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+
+      <h5 class="logo">
+        <a href="index.html">
+          <span class="logo-name">Cedy</span>
+          <span class="logo-line"></span>
+          <span class="logo-text">The Designer</span>
+        </a>
+      </h5>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#projects-wrap">Work</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+          <li>
+            <a href="mailto:cedyzhou@yahoo.com">
+              Contact
+            </a>
+            <span class="nav-hover-bg"></span>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="home">
+
+      <h1 class="main-text">Hello, I’m Cedy. I’m a
+        <b>UI Designer</b> including
+Graphic Design and Front End Development base in
+        <b>Guangzhou</b>. Nice to meet you.</h1>
+
+      <a href="#projects-wrap" class="view-work">
+        <span class="work-line"></span>
+        <h5 class="view-work-txt">View Work</h5>
+      </a>
+
+    </main>
+
+
+    <section id="projects-wrap">
+      <h2 class="work-title">Selected Projects</h2>
+      <div class="card-wrap">
+
+        <a href="rm.html" class="project project-first foo">
+          <div class="project-card lvmh-container">
+            <img class="project-logo" src="img/rm-logo.png">
+          </div>
+          <h4 class="company-title">RiManggis-Personalized eMarketing System </h4>
+          <h5>UI Design</h5>
+        </a>
+
+        <a href="tbb.html" class="project project-second foo">
+          <div class="project-card wechat-container">
+            <img class="project-logo" src="img/tbb-logo.png">
+          </div>
+          <h4 class="company-title">TianBaoBao </h4>
+          <h5>UX & UI Design/Research</h5>
+        </a>
+
+        <a href="gd.html" class="project project-third foo">
+          <div class="project-card gd-container">
+            <img class="project-logo" src="img/godiva-logo.png">
+          </div>
+          <h4 class="company-title">Godiva MiniProgram </h4>
+          <h5>UI Design / Web Fronted-end developer</h5>
+        </a>
+
+            
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <section class="footer-cnt">
+        <h5 class="logo">
+          <a href="index.html">
+            <span class="logo-name">Cedy</span>
+            <span class="logo-line"></span>
+            <span class="logo-text">The Designer</span>
+          </a>
+        </h5>
+
+        <ul>
+          <li><!-- 
+          <i class="info-icon email-icon"></i>
+     -->        <a href="mailto:cedyzhou@yahoo.com"  class="">
+           
+            cedyzhou@yahoo.com</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+             <li>
+             <!--  <i class="info-icon phone"></i> -->
+            <a href="tel:8613556152190"  class="">   
+          8613556152190</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+          <li>
+<!--          <i class="info-icon dw"></i> -->
+            <a target="_blank" href="img/CedyZhou-UI Designer.pdf"  class="">
+          Resume</a>
+            <span class="nav-hover-bg"></span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+
+
+
+  <script src="JS/scrollreveal.js"></script>
+  <script src="JS/smooth-scroll.js"></script>
+
+
+
+  <!-- Smooth Scroll Script !-->
+
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+      // Speed & Easing
+      speed: 1750, // Integer. How fast to complete the scroll in milliseconds
+      offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeOutQuad', // Easing pattern to use
+      customEasing: function(time) {
+
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+
+        // return <your formulate with time as a multiplier>
+
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+      },
+
+      // Callback API
+      before: function(anchor, toggle) {}, // Callback to run before scroll
+      after: function(anchor, toggle) {} // Callback to run after scroll
+    });
+
+  </script>
+
+
+  <!--- Scroll Reveal Script !-->
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.foo');
+    sr.reveal('.bar');
+
+    sr.reveal('.foo', {
+      duration: 1500
+    })
+
+    sr.reveal('.foo', {
+      scale: 1
+    });
+
+    sr.reveal('.foo', {
+      distance: '5px'
+    });
+
+    sr.reveal('.foo', {
+      easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+    });;
+
+  </script>
+
+</body>
+
+</html>
