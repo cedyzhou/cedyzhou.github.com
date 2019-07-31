@@ -1398,7 +1398,8 @@ grid-column:2/3;
     min-width: 300px;
   }
   .logo-text,
-  .logo-line {
+  .logo-line,
+  .logo-name,{
     display: none;
   }
   .footer-cnt {
