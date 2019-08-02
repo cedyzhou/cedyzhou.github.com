@@ -326,7 +326,8 @@ header {
   margin: auto;
   z-index: -999;
 }
-
+.card-wrap>a>div:hover{box-shadow:0 10px 20px rgba(56,56,56,.3)}
+.card-wrap>a:hover>div{-webkit-transform:scale(1.02) translateZ(0);transform:scale(1.02) translateZ(0);opacity:.9}
 .main-nav-list li:hover .nav-hover-bg,
 .about-cnt-bottom ul li:hover .nav-hover-bg,
 .email-wrap:hover .nav-hover-bg {
