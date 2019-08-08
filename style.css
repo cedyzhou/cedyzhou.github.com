@@ -326,8 +326,7 @@ header {
   margin: auto;
   z-index: -999;
 }
-.card-wrap>a>div:hover{box-shadow:0 10px 20px rgba(56,56,56,.3)}
-.card-wrap>a:hover>div{-webkit-transform:scale(1.02) translateZ(0);transform:scale(1.02) translateZ(0);opacity:.9}
+
 .main-nav-list li:hover .nav-hover-bg,
 .about-cnt-bottom ul li:hover .nav-hover-bg,
 .email-wrap:hover .nav-hover-bg {
@@ -493,12 +492,17 @@ header {
   order: 1;
 }
 
+
 .project-second {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
 }
-
+.project-forth {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 4;
+}
 .lvmh-container {
   background-color: #f7f7f7;
 }
@@ -509,6 +513,9 @@ header {
 
 .gd-container {
   background-color: #6b453e;
+}
+.sotheby-container {
+  background-color: #002b5c;
 }
 
 
@@ -1099,8 +1106,8 @@ grid-column:2/3;
 #top-btn:hover {
   opacity: 1;
 }
-
-
+.card-wrap>a>div:hover{box-shadow:0 10px 20px rgba(56,56,56,.3)}
+.card-wrap>a:hover>div{-webkit-transform:scale(1.02) translateZ(0);transform:scale(1.02) translateZ(0);opacity:.9}
 /* CSS Animations */
 
 @-webkit-keyframes grow {
