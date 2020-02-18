@@ -432,8 +432,8 @@ header {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  height: 1680px;
+  justify-content:start;
+  height:3200px;
   padding: 40px;
 }
 
@@ -461,8 +461,8 @@ header {
 }
 
 .project-card {
-  height: 600px;
-  width: 520px;
+  height: auto;
+  width: 320px;
   margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,11 +475,12 @@ header {
   align-items: center;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+ 
 }
 
 .project-logo {
   min-width: 100px;
-  max-width: 200px;
+  max-width:320px;
 }
 
 .project-first {}
@@ -1448,9 +1449,11 @@ grid-column:2/3;
   }
   .project-card {
     max-height: 500px;
+	overflow:hidden;
   }
   .project-logo {
-    max-width: 125px;
+   width: 100%;
+   max-width: 100%;
   }
   header {
     width: 100%;
@@ -1534,7 +1537,8 @@ grid-column:2/3;
     padding: 0 24px;
   }
   .project-card {
-    max-height: 400px;
+   max-height: 450px;
+    overflow: hidden;
   }
 }
 
